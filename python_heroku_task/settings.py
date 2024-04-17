@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = environ.get ("secret_hero")
+SECRET_KEY = 'django-insecure-tlv)36c^h%me#0j)!67193036i0(q!%)rm_9k19_&32jf9!t3b'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
@@ -81,11 +82,11 @@ WSGI_APPLICATION = 'python_heroku_task.wsgi.app'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-        'NAME': environ.get("variable_name"),
-        'USER': environ.get("variable_user"),
-        'PASSWORD': environ.get("database_password"),
-        'HOST': environ.get("variable_host"),
-        'PORT': environ.get("variable_port"),
+        'NAME':'postgres',
+        'USER':'postgres.wnxfjcunsdqpmpgptsre',
+        'PASSWORD':"05IXe8qERG8gAhZW",
+        'HOST':'aws-0-us-west-1.pooler.supabase.com',
+        'PORT':'5432',
     }
 }
 
